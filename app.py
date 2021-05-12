@@ -6,8 +6,8 @@ img = cv2.imread("Syngenta.bmp")
 
 hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 
-lower_range = np.array([40, 40,40])
-upper_range = np.array(z)
+lower_range = np.array([10, 10, 10])
+upper_range = np.array([70, 255,255])
 
 mask = cv2.inRange(hsv, lower_range, upper_range)
 
